@@ -20,7 +20,7 @@
 
 
 body {
-	background-color: #353335;
+	background-color: #343433;
 	color: #eeeeee;
 	font-family: "Quicksand-Regular";
 	font-size: 1rem;
@@ -32,7 +32,7 @@ a {
 
 a:hover {
 	color: #ffffff;
-	background: #000000;
+	background: #222222;
 	text-decoration: none;
 }
 
@@ -50,10 +50,6 @@ main p {
 	margin-bottom: 1rem;
 }
 
-#announcement h1 {
-	font-size: 3rem;
-}
-
 #announcement address {
 	font-family: "Quicksand-Bold";
 	margin: 1rem 0;
@@ -63,9 +59,13 @@ main p {
 	main {
 		width: 1000px;
 	}
+
+	#announcement h1 {
+		font-size: 3rem;
+	}
 }
 
-@media only screen and (min-width: 501px) and (max-width: 999px) {
+@media only screen and (min-width: 601px) and (max-width: 999px) {
 	main {
 		width: 96%;
 		margin: 0 2%;
@@ -76,7 +76,7 @@ main p {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	main {
 		width: 100%;
 		margin: 0;
