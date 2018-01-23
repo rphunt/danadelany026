@@ -4,15 +4,76 @@
 	box-sizing: border-box;
 	font-size: 100%;
 	line-height: 1.4;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: "";
-	src("");
+	font-family: "Quicksand-Regular";
+	src: url("../css/fonts/Quicksand-Regular.otf");
 }
+
+@font-face {
+	font-family: "Quicksand-Bold";
+	src: url("../css/fonts/Quicksand-Bold.otf");
+}
+
 
 body {
 	background-color: #666666;
 	color: #eeeeee;
+	font-family: "Quicksand-Regular";
 }
 
+a {
+	color: #eeeeee;
+}
+
+a:hover {
+	color: #ffffff;
+	background: #000000;
+	text-decoration: none;
+}
+
+main {
+	margin: 0 auto;
+}
+
+#announcement, #twitter {
+	float: left;
+	width: 50%;
+}
+
+#announcement h1 {
+	font-size: 3rem;
+}
+
+#announcement address {
+	font-family: "Quicksand-Bold";
+	margin: 1rem 0;
+}
+
+@media only screen and (min-width: 1000px) {
+	main {
+		width: 1000px;
+	}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 999px) {
+	main {
+		width: 96%;
+		margin: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	main {
+		width: 100%;
+		margin: 0;
+	}
+
+	#announcement, #twitter {
+		float: none;
+		width: 100%;
+	}
+}
